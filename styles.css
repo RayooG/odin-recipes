@@ -1,3 +1,150 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* modification du page  */
+
+.container-body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: url('../odin-recipes/images/img-body.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    transition: 0.5s;
+    color: aliceblue;
+}
+
+
+/* en tete start */
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    border: 1px solid red;
+    width: 100%;
+    height: 45px;
+}
+
+.logo-text h1 {
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    font-size: 2.5rem;
+}
+
+.material-symbols-outlined {
+    color: darkorange;
+    font-size: 1.8rem;
+    transition: 0.3s;
+}
+
+.magic-1 {
+    margin-top: 2px;
+}
+
+.magic-2 {
+    margin-top: 18px;
+}
+
+
+/* en tete end */
+
+
+/* section container home start */
+
+.home-container {
+    display: flex;
+    align-items: center;
+    height: auto;
+    padding: 15px;
+    margin: 5px;
+    border: 1px solid blueviolet;
+}
+
+.col-home-container {
+    flex-basis: 50%;
+}
+
+.card {
+    width: 200px;
+    height: 220px;
+    display: inline-block;
+    border: 1px solid green;
+    margin: 5px 10px;
+    background-image: url('https://www.allrecipes.com/thmb/HqU5FzSEB_E6sXgMwZdWXwCbdBY=/2250x0/filters:no_upscale():max_bytes(150000):strip_icc():gifv():format(webp)/5925391-3978823c3d6f4b0e80a4fb5ff2033db6.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.card-1 {
+    background-image: url('https://www.allrecipes.com/thmb/HqU5FzSEB_E6sXgMwZdWXwCbdBY=/2250x0/filters:no_upscale():max_bytes(150000):strip_icc():gifv():format(webp)/5925391-3978823c3d6f4b0e80a4fb5ff2033db6.jpg');
+}
+
+.card-2 {
+    background-image: url('https://www.allrecipes.com/thmb/nSKi9ASh6CVs1OlpxuT6MFqS8o4=/2250x0/filters:no_upscale():max_bytes(150000):strip_icc():gifv():format(webp)/7766512-9c497aa472ef444d95679acb6fb813ea.jpg');
+}
+
+.card-3 {
+    background-image: url('https://www.allrecipes.com/thmb/UqHHFoeHNQb0QlTXuNRRqwurXcc=/2250x0/filters:no_upscale():max_bytes(150000):strip_icc():gifv():format(webp)/2432990-c97b75b7efb04c20aec15b390a8674fc.jpg');
+}
+
+.card-4 {
+    background-image: url('https://i.ytimg.com/vi/_wqtjRqCOsw/maxresdefault.jpg');
+}
+
+.card h5 {
+    /*font-size: 1rem;*/
+}
+
+.card a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    margin: 15px 5px;
+    color: tomato;
+    font-size: 18px;
+}
+
+
+/*col-home-container start  */
+
+.txt-anim {
+    font-size: 125px;
+    line-height: 160px;
+    margin-left: -10px;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background: url(../images/back.png);
+    -webkit-background-clip: text;
+    background-position: 2 2;
+    animation: back 20s linear infinite;
+}
+
+@keyframes back {
+    100% {
+        background-position: 1000px 0;
+    }
+}
+
+
+/* section container home end */
+
+
+/* mwen fe yon ti komante sou paj la  */
+
+
+/*
 h1 {
     text-align: center;
     font-size: 40px;
@@ -16,6 +163,10 @@ a {
     font-size: 25px;
     color: blue;
 }
+
+
+
+
 
 .images {
     width: 80%;
@@ -59,3 +210,4 @@ ul>li {
     line-height: 1.8;
     margin: 5px 0px;
 }
+*/
