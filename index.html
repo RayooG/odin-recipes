@@ -5,82 +5,109 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--link google fonts -->
+    <!--====== link google fonts ========-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,900;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!--========= link font awesome ==============-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!--========= link styles css ==============-->
     <link rel="stylesheet" href="./styles.css">
     <title>Odin-recipes</title>
 </head>
 
 <body>
-    <!-- Etape 1*** background** -->
-    <div class="container-body">
-        <!-- Etape 2**  header & navbar *** -->
-        <header>
-            <div class="logo-text">
+    <!--========= header start ==============-->
+    <header>
+        <div class="head-resto">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF30jJtuDLfMxm0b4zbl828-TIjMtYqbLNiP48DQKvrgIWWoYk1EaD-TNHeRzHdDty5nY&usqp=CAU" alt="griyo-haitien" class="img-logo">
+            <h3 class="name-resto">RayooG</h3>
+            <p class="affi-name">Kwizin Kreyol Ayisyèn</p>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="./recipes/griyo.html">Griyo Ayisyen</a></li>
+                <li><a href="./recipes/legumes.html">Legim Ayisyèn</a></li>
+                <li><a href="./recipes/lalo.html">Lalo kochon ak krabe</a></li>
+                <li><a href="./recipes/macaroni.html">Macaroni</a></li>
+                <li><a href="#">Crevettes ail-parmesan</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--========= header end ==============-->
+    <div id="menu" class="fas fa-bars"></div>
+    <!--=========* home start *==============-->
+    <section id="home" class="container">
+        <div>
+            <h3 class="home-title">
+                Resèt Kreyol (Odin Project)
+            </h3>
+        </div>
+        <div class="content-row">
+            <div class="container-col">
                 <h1><span class="material-symbols-outlined magic-1">
                     temp_preferences_custom
                     </span>RayooG<span class="material-symbols-outlined magic-2">
                         temp_preferences_custom
                         </span>
                 </h1>
-            </div>
-            <!--<nav class="nav-menu">
-                <ul>
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-                </ul>
-            </nav>
-        -->
+                <h3>
+                    Kwizin Kreyol: <span class="typing">se koupe dwet</span>
+                </h3>
+                <p>
+                    Vant ou se Misyon n, Gou bouch ou se temwanyaj nou nan zafè fè manje, Pa chèche pi lwen se la..! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, quia! Corporis maiores perferendis optio tempore !
+                </p>
 
-        </header>
-        <section class="home-container">
-
-            <div class="col-home-container">
-
-                <h1 class="txt-anim">RayooG!</h1>
-                <h3>Kwizin Kreyol: <span class="typing">se koupe dwet</span></h3>
-
-                <p>Resèt sa yo ou pap jwen li tout kote si non ke Ayiti, pou w reyalize l fok ou gen 5 dwèt</p>
-                <p>Ou ka konn fè manje men pa pase Aiyisyèn yo; vini..., vin pran yon ti leson</p>
 
             </div>
+            <div class="container-col">
 
-
-            <div class="col-home-container">
-                <h1 class="title-card">Odin Recipes</h1>
                 <div class="card card-1">
-                    <h5><a href="/odin-recipes/recipes/macaroni.html">Macaroni</a></h5>
+                    <a href="./recipes/griyo.html">
+                        <h5>Griyo</h5>
+
+                    </a>
                 </div>
-
-
                 <div class="card card-2">
-                    <h5> <a href="./recipes/Crevettes-ail.html">Crevettes ail-parmesan</a></h5>
+                    <a href="./recipes/legumes.html">
+                        <h5>Legum</h5>
 
+                    </a>
                 </div>
                 <div class="card card-3">
-                    <h5><a href="./recipes/Mijoteuse-Guisado-Verde.html">Mijoteuse Guisado Verde</a></h5>
+                    <a href="./recipes/lalo.html">
+                        <h5>Lalo</h5>
 
+                    </a>
                 </div>
                 <div class="card card-4">
-                    <h5><a href="/odin-recipes/recipes/ragout-haiti.html">Ragout Ayisyèn</a></h5>
+                    <a href="./recipes/macaroni.html">
+                        <h5>Macaroni</h5>
+
+                    </a>
 
                 </div>
+
+
+
             </div>
-        </section>
-    </div>
+
+            <!--=========* home end *==============-->
+    </section>
+
+
+
+
+
+
+
+
+
     <!--============================== fichier js script=================================================================================-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+
+    <!--========= link cdn jquery ==============-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!--========= link  fichier jscript ==============-->
     <script src="./js/script.js"></script>
 </body>
 
