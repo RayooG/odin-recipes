@@ -14,6 +14,8 @@ $(document).ready(function() {
 
 
 
+
+
 /*typing animation  */
 var typed = new Typed(".typing", {
     strings: ["se koupe dwet", "se bon nan bouch", "Vant ou se Misyon n"],

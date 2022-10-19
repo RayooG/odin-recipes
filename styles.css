@@ -8,6 +8,12 @@
     --bg-color1: #ffffff;
     --bg-color2: #f75023;
     --bg-color3: #A64253;
+    /* color 2*/
+    --bg-black-900: #f2f2fc;
+    --bg-black-100: #fdf9ff;
+    --bg-black-50: #e8dfec;
+    --text-black-900: #302e4d;
+    --text-black-700: #504e70;
 }
 
 * {
@@ -246,6 +252,118 @@ section {
 /* ======= Home home-box start====== */
 
 
+/*=========  Griyo Ayisyen start ============*/
+
+.main-griyo {
+    background: powderblue;
+    overflow-x: hidden;
+    padding-left: 0;
+    color: #000;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*font-family: sans-serif;*/
+}
+
+.book {
+    position: relative;
+    width: 350px;
+    height: 500px;
+    transition: transform 0.5s;
+}
+
+.paper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    perspective: 1500px;
+}
+
+.front,
+.back {
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform-origin: left;
+    transition: transform 0.5s;
+}
+
+.front {
+    z-index: 1;
+    backface-visibility: hidden;
+    border-left: 3px solid powderblue;
+}
+
+.back {
+    z-index: 0;
+}
+
+.front-content,
+.back-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.back-content {
+    transform: rotateY(180deg)
+}
+
+.flipped .front,
+.flipped .back {
+    transform: rotateY(-180deg);
+}
+
+
+/*button controller*/
+
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 10px;
+    transition: transform 0.5s;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover i {
+    color: #636363;
+}
+
+i {
+    font-size: 40px;
+    color: gray;
+}
+
+
+/* Paper stack order */
+
+#p1 {
+    z-index: 3;
+}
+
+#p2 {
+    z-index: 2;
+}
+
+#p3 {
+    z-index: 1;
+}
+
+
+/*=========  Griyo Ayisyen end ============*/
+
+
 /* ======= Responsive  mdia query start====== */
 
 @media(max-width:1520px) {
@@ -328,20 +446,3 @@ section {
         align-items: center;
     }
 }
-
-
-/*@media(max-width:450px) {
-    .container-col {
-        font-size: 30%;
-    }
-    .content-row {
-        display: flex;
-        flex-direction: column;
-    }
-    .card {
-        align-items: center;
-    }
-}*/
-
-
-/* ======= Responsive  mdia query start====== */
